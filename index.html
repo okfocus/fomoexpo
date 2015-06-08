@@ -175,8 +175,7 @@
 				“The message is the medium”. This widespread statement is as relevant to the postcard as it is in the case of the images and information exchanged on Internet reducing evermore the long voyage that separates now and then.
 			</h3>
 
-			<!--
-			<div id="okgallery" class="gallery js-flickity">
+			<div id="okgallery" class="gallery">
 			<img src="https://farm6.staticflickr.com/5457/17937230355_f7107285ce_k_d.jpg">
 			<img src="https://farm8.staticflickr.com/7744/17751038009_c008f37e7a_b.jpg">
 			<img src="https://farm6.staticflickr.com/5329/17749452708_0c7f78cfd4_k.jpg">
@@ -201,7 +200,7 @@
 			<img src="https://farm8.staticflickr.com/7788/18126887416_26388c23c5_k_d.jpg">
 			<img src="https://farm6.staticflickr.com/5346/17934166382_6c12b45a95_k_d.jpg">
 			</div>	
-			-->
+
 			<iframe src="http://dev.sup.land:9000/" id="feed"></iframe>
 			<span class="cred">
 				RYDER RIPPS – FLASH – Affichage en temps réel des visages à musée. Utilise la détection de visage. Programmation par Jules LaPlace
@@ -240,10 +239,10 @@
 		<script src="flickity.pkgd.min.js"></script>
 		<script>
 		gallery = new Flickity( "#okgallery", {
-			cellSelector: '.cell',
+			cellSelector: 'img',
 			cellAlign: 'left',
 			wrapAround: true,
-			prevNextButtons: false,
+			prevNextButtons: true,
 			pageDots: false,
 			setGallerySize: false,
 			draggable: true,
